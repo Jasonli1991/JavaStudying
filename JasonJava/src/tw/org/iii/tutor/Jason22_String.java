@@ -1,6 +1,6 @@
 package tw.org.iii.tutor;
 
-public class Jason22 {
+public class Jason22_String {
 
 	public static void main(String[] args) {
 		//雙引號即為物件不需new
@@ -12,6 +12,7 @@ public class Jason22 {
 		byte[] b1 = {97, 98 ,99 ,100};
 		String s3 = new String(b1);
 		System.out.println(s2);
+		//輸出對應的ASCII碼
 		System.out.println(s3);
 	}
 
