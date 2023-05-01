@@ -1,6 +1,6 @@
 package tw.org.iii.tutor;
 
-public class Jason27 {
+public class Jason27_typeRange {
 
 	public static void main(String[] args) {
 		

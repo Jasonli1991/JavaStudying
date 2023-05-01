@@ -1,13 +1,13 @@
 package tw.org.iii.tutor;
 
-public class Jason29 {
+public class Jason29_newDifferentClass {
 
 	public static void main(String[] args) {
 		Brad292 obj1 = new Brad292();
 		Brad291 obj2 = new Brad292();
 		Brad291 obj3 = new Brad293();
 		obj2.m1();
-		doThing(obj3);
+		doThing(obj2);
 	}
 
 	static void doThing(Brad291 obj) {

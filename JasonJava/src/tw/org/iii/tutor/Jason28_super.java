@@ -1,6 +1,6 @@
 package tw.org.iii.tutor;
 
-public class Jason28 {
+public class Jason28_super {
 
 	public static void main(String[] args) {
 //		Brad281 obj1 = new Brad281(2);
