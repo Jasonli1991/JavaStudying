@@ -2,7 +2,7 @@ package tw.org.iii.tutor;
 
 import tw.org.iii.myclasses.Bike;
 
-public class Jason24 {
+public class Jason24_StringCompare {
 
 	public static void main(String[] args) {
 		String s1 = "Brad";
@@ -24,6 +24,7 @@ public class Jason24 {
 		System.out.println(str1 == str2);
 		String str3 = new String("Brad");
 		String str4 = new String("Brad");
+		//記憶體位置不同
 		System.out.println(str3 == str4);
 		System.out.println(str1 == str3);
 		System.out.println(str1);

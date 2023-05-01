@@ -2,7 +2,7 @@ package tw.org.iii.tutor;
 
 import tw.org.iii.myclasses.Bike;
 
-public class Jason25 {
+public class Jason25_ObjectCompare {
 
 	public static void main(String[] args) {
 		String str1 = "Brad";
@@ -12,6 +12,9 @@ public class Jason25 {
 		Bike b1 = new Bike();
 		Bike b2 = new Bike();
 		//為改寫的情況下與'＝＝'相同
+		//Bike類中沒有對equals()方法進行重寫，
+		//因此equals()方法預設是使用 == 比較物件的引用，
+		//而不是比較物件的內容
 		System.out.println(b1.equals(b2));
 		Bike b3 = b2;
 		System.out.println(b2.equals(b3));

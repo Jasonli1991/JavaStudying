@@ -1,6 +1,6 @@
 package tw.org.iii.tutor;
 
-public class Jason26 {
+public class Jason26_TypeConversion {
 
 	public static void main(String[] args) {
 		byte b1 = 123;

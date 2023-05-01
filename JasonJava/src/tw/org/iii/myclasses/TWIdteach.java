@@ -20,6 +20,7 @@ public class TWIdteach {
 		StringBuilder sb = new StringBuilder(c1);
 		sb.append(isMale?"1" : "2");
 		for (int i = 0; i < 7; i++) {
+			//產生0~9的隨機整數
 			sb.append((int)(Math.random()*10));
 		}
 		

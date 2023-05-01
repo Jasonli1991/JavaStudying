@@ -2,7 +2,7 @@ package tw.org.iii.tutor;
 
 import tw.org.iii.myclasses.TWIdteach;
 
-public class Jason23 {
+public class Jason23_twID {
 
 	public static void main(String[] args) {
 		String id = "A123456789";
@@ -17,8 +17,11 @@ public class Jason23 {
 		
 		
 		TWIdteach id1 = new TWIdteach();
+		//地區臺中市'B'
 		TWIdteach id2 = new TWIdteach(1);
+		//女性
 		TWIdteach id3 = new TWIdteach(false);
+		//地區臺北市男性
 		TWIdteach id4 = new TWIdteach(true, 0);
 		
 		System.out.println(id1.getId());
