@@ -17,6 +17,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollBar;
 
+import tw.org.iii.myclasses.MyClock;
 import tw.org.iii.myclasses.MyDrawer;
 import tw.org.iii.myclasses.MyDrawerV2;
 
@@ -24,6 +25,7 @@ public class MySign extends JFrame{
 	private MyDrawerV2 myDrawer;
 	private JButton clear, undo, redo, chColor, saveObj, loadObj;
 	private JScrollBar lineSizeScrollBar;
+	private MyClock myClock;
 	
 	
 	public MySign() {
@@ -39,9 +41,10 @@ public class MySign extends JFrame{
 		chColor = new JButton("Color");
 		saveObj = new JButton("Save");
 		loadObj = new JButton("Load");
+		myClock = new MyClock();
 		
 		JPanel top = new JPanel(new FlowLayout());
-		top.add(clear); top.add(undo); top.add(redo); top.add(chColor); top.add(saveObj); top.add(loadObj);
+		top.add(clear); top.add(undo); top.add(redo); top.add(chColor); top.add(saveObj); top.add(loadObj); top.add(myClock);
 		
 		// add line size combo box
         /*lineSizeComboBox = new JComboBox<>(new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
