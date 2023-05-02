@@ -36,7 +36,7 @@ class Jason732 extends TimerTask {
 	}
 }
 class Jason733 extends TimerTask {
-	private int i = 0;
+	private int i ;
 	@Override
 	public void run() {
 		System.out.println(i++);

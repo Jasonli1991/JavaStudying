@@ -25,7 +25,7 @@ public class RacingV2 extends JFrame{
 			lanes[i] = new JLabel("" + (i+1) + ".");
 			add(lanes[i]);
 		}
-		
+
 		go.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
