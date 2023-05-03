@@ -12,7 +12,8 @@ public class Jason67 {
 
 	public static void main(String[] args) {
 		try {
-			File source = new File("dir1/one-handed-push-up.jpeg");
+			File source = new File("dir1/pokeball.png");
+//			File source = new File("dir1/dragonball.png");
 			BufferedInputStream bin = new BufferedInputStream(new FileInputStream(source));
 			byte[] buf = new byte[(int)source.length()];
 			bin.read(buf);
