@@ -27,7 +27,7 @@ public class JDBC01 {
 			String sql = "INSERT INTO cust (cname,tel,birthday) VALUES ('aa', '123', '1999-01-02')";
 			//是：查詢結果？否：增、刪、修
 			if (stmt.execute(sql)) {
-				System.out.println("OK3");
+				System.out.println("Query");
 			} else {
 				System.out.println("Update");
 			}
