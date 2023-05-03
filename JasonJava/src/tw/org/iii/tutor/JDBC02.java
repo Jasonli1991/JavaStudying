@@ -13,7 +13,6 @@ public class JDBC02 {
 			
 			Statement stmt = conn.createStatement();
 			String sql = "INSERT INTO cust (cname,tel,birthday) VALUES ('aa', '123', '1999-01-02')";
-			//是：查詢結果？否：增、刪、修
 			
 			int count = stmt.executeUpdate(sql);
 			System.out.println(count);
