@@ -73,8 +73,10 @@ public class MyPanel extends JPanel {
 		 public int x, y, dx, dy, img;
 		 public BallTask(int x, int y) {
 			 this.x = x; this.y = y;
-			 dx = (int)(Math.random()*15) -7;
-			 dy = (int)(Math.random()*15) -7;
+//			 dx = (int)(Math.random()*15) -7 + 1;
+//			 dy = (int)(Math.random()*15) -7 + 1;
+			 dx = (int)(Math.random()*3+1) * (Math.random()>0.5 ? 1 :-1);
+			 dy = (int)(Math.random()*3+1) * (Math.random()>0.5 ? 1 :-1);
 			 img = (int)(Math.random()*4);
 		 }
 		 
