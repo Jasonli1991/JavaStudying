@@ -20,12 +20,13 @@ public class JDBC01 {
 		}
 		
 		try {
+			//連線伺服器
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:8889/iii?user=root&password=root");
 			System.out.println("OK2");
 			
 			Statement stmt = conn.createStatement();
 			String sql = "INSERT INTO cust (cname,tel,birthday) VALUES ('aa', '123', '1999-01-02')";
-			//是：查詢結果？否：增、刪、修
+			//是：查詢結果？return回資料,否：增、刪、修
 			if (stmt.execute(sql)) {
 				System.out.println("Query");
 			} else {
