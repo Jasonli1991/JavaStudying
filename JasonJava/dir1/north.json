@@ -1,0 +1,56 @@
+[
+	{
+		"rank": 1,
+		"firstname": "Margaret",
+		"lastname": "Peacock",
+		"sum": 250187.45
+	},
+	{
+		"rank": 2,
+		"firstname": "Janet",
+		"lastname": "Leverling",
+		"sum": 213051.3
+	},
+	{
+		"rank": 3,
+		"firstname": "Nancy",
+		"lastname": "Davolio",
+		"sum": 202143.71
+	},
+	{
+		"rank": 4,
+		"firstname": "Andrew",
+		"lastname": "Fuller",
+		"sum": 177749.26
+	},
+	{
+		"rank": 5,
+		"firstname": "Robert",
+		"lastname": "King",
+		"sum": 141295.99
+	},
+	{
+		"rank": 6,
+		"firstname": "Laura",
+		"lastname": "Callahan",
+		"sum": 133301.03
+	},
+	{
+		"rank": 7,
+		"firstname": "Anne",
+		"lastname": "Dodsworth",
+		"sum": 82964
+	},
+	{
+		"rank": 8,
+		"firstname": "Michael",
+		"lastname": "Suyama",
+		"sum": 78198.1
+	},
+	{
+		"rank": 9,
+		"firstname": "Steven",
+		"lastname": "Buchanan",
+		"sum": 75567.75
+	}
+]

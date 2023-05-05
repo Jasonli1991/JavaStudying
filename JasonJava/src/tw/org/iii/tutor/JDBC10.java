@@ -42,7 +42,7 @@ public class JDBC10 {
 					member.setEmail(rs.getString("email"));
 					welcome(member);
 				}else {
-					//get out
+					//Login fail
 					System.out.println("Login failure");
 				}
 			}else {
