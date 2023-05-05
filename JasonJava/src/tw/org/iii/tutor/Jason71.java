@@ -18,7 +18,6 @@ public class Jason71 {
 			HttpURLConnection conn = 
 				(HttpURLConnection)url.openConnection();
 			conn.connect();
-			
 			BufferedInputStream bin = 
 				new BufferedInputStream(conn.getInputStream());
 			FileOutputStream fout = new FileOutputStream("dir2/iii.jpg");
@@ -38,5 +37,5 @@ public class Jason71 {
 		}
 		
 	}
-
+	
 }
