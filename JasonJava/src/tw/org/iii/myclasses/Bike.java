@@ -32,7 +32,6 @@ public class Bike extends Object implements Serializable{
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return "Bike:" + speed;
 	}
 	
