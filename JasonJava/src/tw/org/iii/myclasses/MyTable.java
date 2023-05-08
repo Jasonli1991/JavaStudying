@@ -16,16 +16,20 @@ public class MyTable extends JTable {
 		
 		myModel = new MyModel();
 		setModel(myModel);
-		
+		myModel.setColumnIdentifiers(foodDB.getHeader());
+	}
+	
+	public void delRow() {
+		myModel.removeRow(getSelectedRow());
+		repaint();
 	}
 	
 	private class MyModel extends DefaultTableModel {
 
-//		@Override
-//		public void removeRow(int row) {
-//			// TODO Auto-generated method stub
-//			super.removeRow(row);
-//		}
+		@Override
+		public void removeRow(int row) {
+			foodDB.delRow(row + 1);
+		}
 
 		@Override
 		public int getRowCount() {
@@ -39,8 +43,7 @@ public class MyTable extends JTable {
 
 		@Override
 		public boolean isCellEditable(int row, int column) {
-			// TODO Auto-generated method stub
-			return super.isCellEditable(row, column);
+			return column > 0;
 		}
 
 		@Override
@@ -51,8 +54,7 @@ public class MyTable extends JTable {
 
 		@Override
 		public void setValueAt(Object aValue, int row, int column) {
-			// TODO Auto-generated method stub
-			super.setValueAt(aValue, row, column);
+			foodDB.updateData(row + 1, column + 1, (String)aValue);
 		}
 		
 	}

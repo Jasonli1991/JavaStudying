@@ -37,6 +37,21 @@ public class FoodDB {
 		}
 	}
 	
+	//1-base
+	public void delRow(int row) {
+		try {
+			rs.absolute(row);
+			rs.deleteRow();
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		
+	}
+	
+	public String[] getHeader() {
+		return fieldNames;
+	}
+	
 	public int getRows() {	
 		try {
 			rs.last();
@@ -59,6 +74,17 @@ public class FoodDB {
 			return rs.getString(fieldNames[col-1]);
 		}catch (Exception e) {
 			return "XX";
+		}
+	}
+	
+	//row, col => 1-base
+	public void updateData(int row, int col, String aValue) {
+		try {
+			rs.absolute(row);
+			rs.updateString(fieldNames[col-1], aValue);
+			rs.updateRow();
+		}catch (Exception e) {
+			System.out.println(e);
 		}
 	}
 
