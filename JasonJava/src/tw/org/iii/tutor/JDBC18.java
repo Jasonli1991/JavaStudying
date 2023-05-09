@@ -22,7 +22,9 @@ public class JDBC18 extends JFrame{
 		setLayout(new BorderLayout());
 		JPanel top = new JPanel(new FlowLayout());
 		del = new JButton("Del");
+		addButton = new JButton("Add"); // 新增 addButton 按鈕
 		top.add(del);
+		top.add(addButton); // 加入 addButton 到頂部的 JPanel
 		add(top, BorderLayout.NORTH);
 		del.addActionListener(new ActionListener() {
 			@Override

@@ -18,7 +18,7 @@ public class MyTable extends JTable {
 		setModel(myModel);
 		myModel.setColumnIdentifiers(foodDB.getHeader());
 	}
-	
+
 	public void delRow() {
 		myModel.removeRow(getSelectedRow());
 		repaint();
